@@ -5,7 +5,7 @@
 }
 
 .body{
-    background: url("/Assets/Background_Img.jpg"); 
+     background-image:url(Assets/Background_Img.jpg) ;
     min-height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
