@@ -1,0 +1,90 @@
+/* CSS for Login Page */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image:url(b.jpg);
+    background-size: 100%;  /* Reduces the image size to 80% */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Light translucent effect */
+    backdrop-filter: blur(2px); /* Smooth blur for glass effect */
+    z-index: -1;
+}
+
+.auth-container {
+    background: rgba(255, 255, 255, 0.2); /* More transparency */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(15px); /* Stronger blur for glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    color: green;
+    outline: none;
+}
+
+input::placeholder {
+    color: black;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: rgba(69, 157, 245, 0.973);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgba(93, 210, 97, 0.8);
+}
+
+.error {
+    color: rgb(255, 100, 100);
+    margin-top: 10px;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

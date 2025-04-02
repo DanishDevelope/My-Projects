@@ -1,0 +1,33 @@
+<!-- Html for Snack Game -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeMania - Ek Gaming Katha</title>
+    <link rel="stylesheet" href="Snack_style.css">
+</head>
+<body>
+    <div class="body">
+        <div id="userGreeting">Welcome, <span id="userName">User</span></div> <!-- Display username -->
+        <button id="logoutButton">Logout</button>
+        <div id="scoreBox">Score: 0</div>
+        <div id="hiscoreBox">HiScore: 0</div>
+        <div id="board"></div>
+    </div>
+    <script src="Snack_script.js"></script>
+    <script>
+        // Extract the user name from the URL query string
+        function getUserName() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('user') || 'Guest'; // Default to 'Guest' if no user name is found
+        }
+
+        // Display the user name in the greeting section
+        document.getElementById('userName').textContent = getUserName();
+    </script>
+</body>
+</html>
